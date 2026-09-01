@@ -11,8 +11,6 @@ __pycache__/
 data/*.db
 data/*.log
 
-# JavaScript and OS artifacts
-node_modules/
-npm-debug.log*
+# OS artifacts
 .DS_Store
 Thumbs.db
