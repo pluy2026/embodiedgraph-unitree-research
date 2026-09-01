@@ -1,0 +1,34 @@
+{
+  "snapshot": { "id": "unitree-2026-08-29", "asOf": "2026-08-29", "createdAt": "2026-08-29", "license": "Public-web research snapshot; source pages retain their own terms." },
+  "entities": [
+    { "id": "unitree", "name": "宇树科技（Unitree Robotics）", "kind": "company", "aliases": ["Unitree", "杭州宇树科技"] },
+    { "id": "nvidia", "name": "NVIDIA", "kind": "company", "aliases": ["英伟达"] },
+    { "id": "sharpa", "name": "Sharpa Robotics", "kind": "company", "aliases": ["Sharpa"] },
+    { "id": "speedikon", "name": "speedikon FM AG", "kind": "company", "aliases": ["speedikon"] },
+    { "id": "agibot", "name": "智元机器人（AGIBOT）", "kind": "company", "aliases": ["AGIBOT"] },
+    { "id": "unitree-investors", "name": "宇树科技历史融资方（待逐项核验）", "kind": "organization_group", "aliases": [] }
+  ],
+  "relations": [
+    {
+      "id": "rel-unitree-nvidia-groot", "from": "nvidia", "to": "unitree", "type": "partner", "status": "confirmed", "title": "NVIDIA Isaac GR00T 参考人形机器人采用宇树 H2 Plus", "summary": "NVIDIA 的公开新闻稿将 Unitree H2 Plus 列为 Isaac GR00T 参考设计的机体组成部分。", "validity": { "from": "2026-05-31", "to": null }, "uncertainty": "新闻稿确认该参考设计的技术组合；不据此推断排他合作、采购规模或长期商业合同。", "confidence": { "score": 92, "authority": 30, "directness": 30, "independence": 12, "recency": 10, "specificity": 10 }, "evidenceIds": ["ev-nvidia-groot"]
+    },
+    {
+      "id": "rel-unitree-sharpa-groot", "from": "sharpa", "to": "unitree", "type": "partner", "status": "confirmed", "title": "Sharpa 与宇树产品共同进入 NVIDIA 参考设计", "summary": "NVIDIA 公告将 Sharpa Wave 灵巧手与 Unitree H2 Plus 共同列入 Isaac GR00T 参考设计。", "validity": { "from": "2026-05-31", "to": null }, "uncertainty": "共同进入参考设计只说明该具体技术组合，不能外推为双方全部产品线合作。", "confidence": { "score": 89, "authority": 30, "directness": 28, "independence": 11, "recency": 10, "specificity": 10 }, "evidenceIds": ["ev-nvidia-groot"]
+    },
+    {
+      "id": "rel-speedikon-unitree-b2", "from": "speedikon", "to": "unitree", "type": "customer", "status": "confirmed", "title": "speedikon 将宇树机器狗纳入其技术组合", "summary": "speedikon 的公开新闻稿称，其技术组合新增来自 Unitree Robotics 的机器狗。", "validity": { "from": "2024-06-04", "to": null }, "uncertainty": "该证据确认产品进入其组合，未披露订单金额、数量或持续服务条款。", "confidence": { "score": 84, "authority": 24, "directness": 27, "independence": 12, "recency": 8, "specificity": 13 }, "evidenceIds": ["ev-speedikon-portfolio"]
+    },
+    {
+      "id": "rel-unitree-agibot-peer", "from": "unitree", "to": "agibot", "type": "peer", "status": "inferred", "title": "在通用人形机器人领域存在直接竞争", "summary": "公开报道将两家公司并列为中国主要人形机器人厂商；结合其产品定位，记录为竞争推断。", "validity": { "from": "2026-08-19", "to": null }, "uncertainty": "媒体并列与产品定位支持竞争判断，但双方并未在该来源中相互定义为“竞争对手”。", "confidence": { "score": 66, "authority": 18, "directness": 14, "independence": 12, "recency": 10, "specificity": 12 }, "evidenceIds": ["ev-ap-unitree-agibot"]
+    },
+    {
+      "id": "rel-investors-unitree-history", "from": "unitree-investors", "to": "unitree", "type": "investor_or_investee", "status": "unknown", "title": "历史融资方名单待以原始披露逐项确认", "summary": "当前离线快照保留研究线索，但不把媒体归纳的投资方名单写成已确认股权关系。", "validity": { "from": null, "to": null }, "uncertainty": "缺少可定位的原始融资公告、工商/招股书披露或投资方公告；不得用于判断当前持股。", "confidence": { "score": 18, "authority": 4, "directness": 2, "independence": 4, "recency": 3, "specificity": 5 }, "evidenceIds": ["ev-investor-gap"]
+    }
+  ],
+  "evidence": [
+    { "id": "ev-nvidia-groot", "publisher": "NVIDIA Newsroom", "publishedAt": "2026-05-31", "retrievedAt": "2026-08-29", "url": "https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design", "locator": "News Summary, first bullet; body paragraph 1", "excerpt": "The reference design combines a Unitree H2 Plus humanoid robot and Sharpa Wave tactile five-finger hands with NVIDIA compute and software.", "access": "Public web page; no login required", "availability": "available", "licenseNote": "Used as a citation and short factual excerpt; page terms apply." },
+    { "id": "ev-speedikon-portfolio", "publisher": "speedikon FM AG", "publishedAt": "2024-06-04", "retrievedAt": "2026-08-29", "url": "https://www.speedikonfm.com/wp-content/uploads/2024/06/speedikon-group-of-companies-adds-Unitree-Robotics-robot-dog-to-its-portfolio-.pdf", "locator": "Press release title and opening paragraph", "excerpt": "The speedikon group of companies adds a robot dog from Chinese manufacturer Unitree Robotics to its technology portfolio.", "access": "Public PDF; no login required", "availability": "available", "licenseNote": "Used as a citation and short factual excerpt; document terms apply." },
+    { "id": "ev-ap-unitree-agibot", "publisher": "Associated Press", "publishedAt": "2026-08-19", "retrievedAt": "2026-08-29", "url": "https://apnews.com/article/f33facc61122faf0c0b08af5020bd170", "locator": "Paragraph discussing 2025 humanoid shipments", "excerpt": "Unitree and AGIBOT are described as major Chinese humanoid robot makers with comparable 2025 shipment scale.", "access": "Public web page at retrieval; no login required", "availability": "available", "licenseNote": "Used as a citation and short factual excerpt; page terms apply." },
+    { "id": "ev-investor-gap", "publisher": "Research log", "publishedAt": null, "retrievedAt": "2026-08-29", "url": null, "locator": "Gap record", "excerpt": "No original public disclosure was retained in this snapshot to confirm a named investor and the nature or current status of its holding.", "access": "Not a source; research gap record", "availability": "unavailable", "licenseNote": "No external content retained." }
+  ]
+}

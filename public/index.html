@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EmbodiedGraph · 宇树科技关系研究</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="review.css"><link rel="stylesheet" href="layout-fixes.css?v=overview-film-5">
+</head>
+<body>
+  <main>
+    <header><p class="eyebrow">EmbodiedGraph / offline research snapshot</p><h1>具身智能产业关系研究</h1><p class="lead">以宇树科技为中心，将每一条关系结论连接到公开证据、有效时间与判断边界。</p></header>
+    <section class="notice"><strong>研究快照：</strong><span id="snapshot">加载中</span>。置信度衡量证据可靠性，不表示关系的重要性。</section>
+    <section class="filters" aria-label="关系筛选"><label>关系类型<select id="type"><option value="">全部</option><option value="supplier">供应商</option><option value="customer">客户/应用</option><option value="partner">合作伙伴</option><option value="investor_or_investee">投资关系</option><option value="peer">竞争同业</option></select></label><label>事实状态<select id="status"><option value="">全部</option><option value="confirmed">已确认</option><option value="probable">较高可能</option><option value="unverified">待验证</option><option value="unknown">未知</option></select></label><label>最低置信度<input id="minConfidence" type="number" min="0" max="100" placeholder="0–100"></label><button id="apply">筛选</button></section>
+    <section><div class="section-title"><h2>关系图谱</h2><span id="count"></span></div><div id="graph" class="graph"></div></section>
+    <section><div class="section-title"><h2>关系清单</h2><span>点击查看证据</span></div><div id="results" class="results"></div></section>
+    <dialog id="detail"><button class="close" aria-label="关闭">×</button><div id="detailContent"></div></dialog>
+    <section id="evidenceCenter"></section>
+  </main><script src="review.js?v=overview-film-5"></script><script src="layout-fixes.js"></script>
+</body>
+</html>

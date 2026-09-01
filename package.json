@@ -1,0 +1,12 @@
+{
+  "name": "embodiedgraph",
+  "version": "0.1.0",
+  "private": true,
+  "description": "可追溯的具身智能产业关系研究服务",
+  "scripts": {
+    "start": "node src/server.js",
+    "query": "node src/cli.js",
+    "test": "node --test src/server.test.js"
+  },
+  "engines": { "node": ">=20" }
+}

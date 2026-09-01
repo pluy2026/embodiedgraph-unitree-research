@@ -1,0 +1,6 @@
+/* Shared height for all click-through overview pages. */
+.overview-pages>article,.overview-pages .brief-conclusions,.overview-pages .brief-review{min-height:min(720px,calc(100vh - 74px))!important}
+
+/* Supplied official product imagery for the Livox and RoboSense review cards. */
+.overview-brief .review-tile.tile-0::before{background-image:linear-gradient(180deg,#120e081c 20%,#130f0cdd 100%),url('assets/livox-mid360s-official.png');background-position:68% center}
+.overview-brief .review-tile.tile-2::before{background-image:linear-gradient(180deg,#120e0816 20%,#130f0cdd 100%),url('assets/robosense-official.png');background-position:68% center}

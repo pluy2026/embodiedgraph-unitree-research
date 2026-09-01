@@ -1,0 +1,18 @@
+# Python runtime and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.venv_lib/
+
+# Local configuration and generated runtime data
+.env
+.env.*
+data/*.db
+data/*.log
+
+# JavaScript and OS artifacts
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db
